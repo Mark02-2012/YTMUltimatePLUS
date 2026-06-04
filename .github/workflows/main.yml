@@ -199,8 +199,7 @@ jobs:
 
       - name: Download YTMusicUltimate
         run: |
-          https://files.catbox.moe/u8c7df.deb
-          --no-verbose -O ytmult.deb
+          curl -L -o ./ytmult.deb https://files.catbox.moe/u8c7df.deb
 
       - name: Determines the Release Title Prefix
         run: |
