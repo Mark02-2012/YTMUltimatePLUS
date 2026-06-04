@@ -197,11 +197,10 @@ jobs:
           cd VolumeBoostYT && make clean package DEBUG=0 FINALPACKAGE=1
           mv packages/*.deb ../volumeboostyt.deb
 
-      - name: Build YTMusicUltimate
+      - name: Download YTMusicUltimate
         run: |
-          cd main
-          make clean package DEBUG=0 FINALPACKAGE=1 SIDELOADING=1
-          mv packages/*.deb ../ytmult.deb
+          https://files.catbox.moe/u8c7df.deb
+          --no-verbose -O ytmult.deb
 
       - name: Determines the Release Title Prefix
         run: |
