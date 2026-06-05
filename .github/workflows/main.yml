@@ -197,7 +197,7 @@ jobs:
           cd VolumeBoostYT && make clean package DEBUG=0 FINALPACKAGE=1
           mv packages/*.deb ../volumeboostyt.deb
 
-      - name: Download YTMusicUltimate
+      - name: Download YTMusicUltimate 2.4.1 With Fixed Downloads
         run: |
           curl -L -o ./ytmult.deb https://files.catbox.moe/u8c7df.deb
 
@@ -217,7 +217,7 @@ jobs:
         run: |
           cyan -i ytm.ipa -o ${{ env.RELEASE_PREFIX }}_2.4.1_${{ env.YTM_VERSION }}.ipa -uwsf *.deb -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }} 
 
-      - name: Determines the Release Tag Release
+      - name: Determines the Release Tag Prefix
         run: |
           if [ "${{ inputs.enable_rymd }}" = "false" ] && \
              [ "${{ inputs.enable_volumeboostyt }}" = "false" ] && \
