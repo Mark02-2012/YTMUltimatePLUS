@@ -213,7 +213,7 @@ jobs:
             echo "RELEASE_PREFIX=YTMUltimate+" >> $GITHUB_ENV
           fi
 
-      - name: Inject tweak into provided IPA
+      - name: Inject tweaks into provided IPA
         run: |
           cyan -i ytm.ipa -o ${{ env.RELEASE_PREFIX }}_2.4.1_${{ env.YTM_VERSION }}.ipa -uwsf *.deb -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }} 
 
