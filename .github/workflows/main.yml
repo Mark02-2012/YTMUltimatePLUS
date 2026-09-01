@@ -1,27 +1,27 @@
-name: Build and Release YTMusicUltimate and YTMUltimate+
+name: Build and Release YTMusicUltimate and MaxMusic
 on:
   workflow_dispatch:
     inputs: 
       enable_rymd:
-       description: "Integrate Return-YouTube-Music-Dislikes (YTMUltimate+)"
+       description: "Integrate Return-YouTube-Music-Dislikes (MaxMusic)"
        type: boolean
        required: true
        default: false
 
       enable_ytmabc:
-       description: "Integrate YTMABConfig (YTMUltimate+)"
+       description: "Integrate YTMABConfig (MaxMusic)"
        type: boolean
        required: true
        default: false
 
       enable_youmusicpip:
-       description: "Integrate YouMusicPiP (YTMUltimate+)"
+       description: "Integrate YouMusicPiP (MaxMusic)"
        type: boolean
        required: true
        default: false
 
       enable_volumeboostyt:
-       description: "Integrate VolumeBoostYT (YTMUltimate+)"
+       description: "Integrate VolumeBoostYT (MaxMusic)"
        type: boolean
        required: true
        default: false
@@ -50,7 +50,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build YTMusicUltimate
+    name: Build app
     runs-on: macos-latest
     permissions:
       contents: write
@@ -210,7 +210,7 @@ jobs:
             
             echo "RELEASE_PREFIX=YTMusicUltimate" >> $GITHUB_ENV
           else
-            echo "RELEASE_PREFIX=YTMUltimate+" >> $GITHUB_ENV
+            echo "RELEASE_PREFIX=MaxMusic" >> $GITHUB_ENV
           fi
 
       - name: Inject tweaks into provided IPA
@@ -226,7 +226,7 @@ jobs:
             
             echo "TAG_PREFIX=YTMU" >> $GITHUB_ENV
           else
-            echo "TAG_PREFIX=YTMU+" >> $GITHUB_ENV
+            echo "TAG_PREFIX=MaxMusic" >> $GITHUB_ENV
           fi
 
       - name: Create Release
