@@ -4,7 +4,7 @@
 
 [YTMU+no-YMP]: https://github.com/Mark02-2012/YTMUltimatePLUS/releases/download/YTMU%2B_9.34.4_2.4.1_(85)/YTMUltimate+_no_YMP_2.4.1_9.34.4.ipa
 
-<h1 p align="center">YTMUltimate+</h1>
+<h1 p align="center">MaxMusic (ex YTMUltimate+)</h1>
    
 <p align="center">
 <td><img src="Resources/IMG_5914.png" width=500
@@ -106,6 +106,9 @@ YTMUltimate+ is simply a fork of the original [YTMusicUltimate](https://github.c
 ## YTMUltimate+ versions changelog
  * **1.0 (May 29 2026)**:
   <p>First release, added Return-YouTube-Music-Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT</p>
+  
+ * **1.1 (September 1 2026)**:
+   <p>Changed name from YTMUltimate+ to MaxMusic (will update the repo with the new name soon)</p>
 
 ## Added tweaks
 >[!NOTE]
