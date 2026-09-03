@@ -42,7 +42,7 @@ Implemented new fixed deb for working downloads from release 9.23.4 and 2.4.1! (
 
 ## Download Links
 
-* **Jailbreak (Only YTMusicUltimate):**
+* **Jailbreak (Only YTMusicUltimate) DEPRECATED, WILL FIX:**
 Add __[https://ginsu.dev/repo](https://ginsu.dev/repo)__ to your favorite installer and download latest version from __[Releases](https://github.com/ginsudev/YTMusicUltimate/releases)__ page.
 
 (arm.deb version for Rootful and arm64.deb version for Rootless devices)
@@ -94,7 +94,7 @@ MaxMusic is simply a fork of the original [YTMusicUltimate](https://github.com/D
   <p>First release, added Return-YouTube-Music-Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT</p>
   
  * **1.1 (September 1 2026)**:
-   <p>Changed name from YTMUltimate+ to MaxMusic (will update the repo with the new name soon)</p>
+   <p>Changed name from YTMUltimate+ to MaxMusic</p>
 
 ## Added tweaks
 >[!NOTE]
